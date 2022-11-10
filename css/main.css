@@ -1,19 +1,43 @@
+@charset "UTF-8";
 /* Utilitaires color */
 /* Couleurs de fonds */
 /* Couleur de txt */
+/* Variables Box Shadows */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
+.presentation__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fonctionnement, .presentation, .localisation, .footer, .header {
+  width: 100%;
+  padding: 30px 15px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+/*
+@mixin type-txt ($font-size, $font-weight, $line-height ) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+*/
 /*===================== CSS principal ===================== */
+/*===================== Fonts ===================== */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-  padding: 1rem 3rem;
-  margin: 0 auto;
-  position: relative;
-  z-index: 5;
+body {
+  background-color: #FFF;
+  font-family: "Roboto";
 }
 
 img {
@@ -21,14 +45,141 @@ img {
   height: 100%;
 }
 
+h1 {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  color: #FFF;
+  background: linear-gradient(#FF79DA, 15%, #9356DC);
+  box-shadow: 0px 10px 5px #c2c2c2;
+  opacity: 80%;
+}
+
 /*===================== Fin CSS principal ===================== */
 /*===================== CSS Header ===================== */
-.container .__img--header {
-  width: 150px;
+.header {
+  border-bottom: 4px solid #d1d1d1;
+}
+.header__img {
+  width: 160px;
   height: 30px;
   margin: 0 auto;
 }
 
 /*===================== Fin CSS Header ===================== */
+/*===================== CSS Footer ===================== */
+.footer {
+  background-color: rgb(36, 36, 36);
+}
+.footer__img {
+  margin-bottom: 20px;
+  width: 150px;
+  color: white;
+}
+.footer a {
+  color: #FFF;
+  line-height: 30px;
+}
+.footer__logo {
+  width: 10px;
+  color: white;
+  margin-right: 20px;
+}
+
+/*===================== Fin CSS Footer ===================== */
+/*===================== CSS localisation ===================== */
+.localisation {
+  background-color: #E1E1E1;
+}
+.localisation__position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localisation__position h2 {
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+/*===================== Fin CSS localisation ===================== */
+/*===================== CSS Présentation ===================== */
+.presentation {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #EEEEEE;
+}
+.presentation__box {
+  flex-direction: column;
+  text-align: center;
+}
+.presentation__box h2 {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+/*===================== Fin CSS Présentation ===================== */
+/*===================== CSS Fonctionnement ===================== */
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement__box {
+  display: flex;
+  justify-content: space-around;
+  background-color: #EEEEEE;
+  border-radius: 40px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 5px #c2c2c2;
+}
+.fonctionnement__box__numero {
+  background-color: #9356DC;
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
+  margin-left: -42px;
+  color: #FFF;
+}
+.fonctionnement__box__logo {
+  padding: 5px;
+}
+.fonctionnement__box p {
+  padding: 5px;
+  width: 250px;
+  padding-right: 60px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.fonctionnement h1 {
+  margin-bottom: 40px;
+}
+
+/*===================== Fin CSS Fonctionnement ===================== */
 
 /*# sourceMappingURL=main.css.map */

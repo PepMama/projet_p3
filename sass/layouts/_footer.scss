@@ -1,0 +1,21 @@
+/*===================== CSS Footer ===================== */
+.footer{
+    @extend %container;
+    background-color: rgb(36, 36, 36);
+    &__img{
+        margin-bottom: 20px;
+        width: 150px;
+        color: white;
+    }
+    a{
+        color: $txt-fond-sombre;
+        line-height: 30px;
+    }
+    &__logo{
+        width: 10px;
+        color: white;
+        margin-right: 20px;
+    }
+}
+
+/*===================== Fin CSS Footer ===================== */

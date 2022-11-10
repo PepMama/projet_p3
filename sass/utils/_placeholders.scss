@@ -1,0 +1,13 @@
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%container{
+    width: 100%;
+    padding: 30px 15px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}

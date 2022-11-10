@@ -1,13 +1,15 @@
 /*===================== CSS Header ===================== */
-.container{
-    
-    .__img--header{
-        width: 150px;
+.header{
+    @extend %container;
+    border-bottom: 4px solid #d1d1d1;
+    &__img{
+        width: 160px;
         height: 30px;
         margin: 0 auto;
-    }
+    }   
 }
 
-
-
 /*===================== Fin CSS Header ===================== */
+
+
+
