@@ -1,5 +1,34 @@
-p {
-  background-color: red;
+/* Utilitaires color */
+/* Couleurs de fonds */
+/* Couleur de txt */
+/*===================== CSS principal ===================== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.container {
+  width: 100%;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/*===================== Fin CSS principal ===================== */
+/*===================== CSS Header ===================== */
+.container .__img--header {
+  width: 150px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+/*===================== Fin CSS Header ===================== */
 
 /*# sourceMappingURL=main.css.map */

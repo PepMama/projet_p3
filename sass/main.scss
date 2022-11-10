@@ -1,3 +1,4 @@
-@import "tests/test.scss";
-@import "pages/homepage";
-@import "pages/menupage";
+@import "./utils/_variables"; // on importe le code css contentant les variables du site web
+@import "./base/base.scss"; // on import le css qui sera présent sur toutes les pages
+@import "./layouts/header";
+
