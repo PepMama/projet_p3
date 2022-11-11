@@ -7,6 +7,12 @@
         width: 150px;
         color: white;
     }
+    &__titrelogo{
+        font-family: "Shrikhand";
+        color: white;
+        line-height: 50px;
+        font-weight: 500;
+    }
     a{
         color: $txt-fond-sombre;
         line-height: 30px;

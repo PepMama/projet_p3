@@ -103,6 +103,12 @@ button {
   width: 150px;
   color: white;
 }
+.footer__titrelogo {
+  font-family: "Shrikhand";
+  color: white;
+  line-height: 50px;
+  font-weight: 500;
+}
 .footer a {
   color: #FFF;
   line-height: 30px;
