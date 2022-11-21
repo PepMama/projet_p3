@@ -5,13 +5,13 @@
 /* Variables Box Shadows */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
-.presentation__box {
+.btn_menus, .presentation__box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.restaurants, .fonctionnement, .presentation, .localisation, .footer, .header {
+.carte, .restaurants, .fonctionnement, .presentation, .localisation, .footer, .header {
   width: 100%;
   padding: 30px 15px;
   margin: 0 auto;
@@ -220,25 +220,94 @@ ul {
   border-radius: 20px 20px 0px 0px;
 }
 .restaurants__cards__name {
-  padding: 15px;
+  padding: 10px;
   display: grid;
+  margin-top: 10px;
 }
 .restaurants__cards__name h2 {
+  color: black;
   font-weight: 900;
   font-size: 20px;
 }
 .restaurants__cards__name p {
   font-size: 18px;
+  color: black;
 }
-.restaurants__cards .name_heart {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.restaurants__cards .img_heart {
-  margin-right: 30px;
+.restaurants__cards .fa-heart {
+  font-size: 30px;
+  margin-left: 300px;
+  position: relative;
+  bottom: 50px;
 }
 
 /*===================== Fin CSS restaurants ===================== */
+/*===================== CSS Menus ===================== */
+.imageMenu {
+  position: relative;
+  height: 300px;
+}
+
+.titreMenu {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.titreMenu h1 {
+  font-family: "Shrikhand";
+  font-size: 30px;
+  font-weight: 300;
+}
+.titreMenu .fa-heart {
+  font-size: 30px;
+}
+
+.carte {
+  top: -60px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: white;
+}
+
+.menu {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.line {
+  background-color: #99E2D0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 60px;
+  height: 2px;
+  padding: 2px;
+}
+
+.repas {
+  display: flex;
+  flex-direction: column;
+}
+.repas .plats {
+  margin-top: 15px;
+  padding: 3%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 12px #c2c2c2;
+}
+.repas .plats__details {
+  display: flex;
+  justify-content: space-between;
+}
+.repas .plats__details p {
+  line-height: 30px;
+}
+.repas .plats__details .prix {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.btn_menus {
+  margin: 15px auto;
+  width: 50%;
+}
 
 /*# sourceMappingURL=main.css.map */

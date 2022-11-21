@@ -90,6 +90,7 @@
         margin-bottom: 12px;
         box-shadow: $box-shadows-var;
         border-radius: 30px;
+
         .news{
             &::after{
                 content: "Nouveau";
@@ -107,31 +108,35 @@
             width: 100%;
             height: 190px;           
         }
+
         img{
             border-radius: 20px 20px 0px 0px;
         }
+
         &__name{
-            padding: 15px;
+            padding: 10px;
             display: grid;
+            margin-top: 10px;
+            
             h2{
+                color: black;
                 font-weight: 900;
                 font-size: 20px;
             }
             p{
                 font-size: 18px;
+                color: black;
             }
-        }
-        .name_heart{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .img_heart{
-            margin-right: 30px;
-        }
-        
+        } 
+
+        .fa-heart{
+            font-size: 30px;
+            margin-left: 300px;
+            position: relative;
+            bottom: 50px;
+        }               
     }
 }
 
-
+   
 /*===================== Fin CSS restaurants ===================== */

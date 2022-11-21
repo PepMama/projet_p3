@@ -1,0 +1,78 @@
+/*===================== CSS Menus ===================== */
+.imageMenu{
+    position: relative;
+    height: 300px;
+}
+
+.titreMenu{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+        font-family: "Shrikhand";
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .fa-heart{
+        font-size: 30px
+    }
+
+}
+
+.carte{
+    @extend %container;
+    top: -60px;
+    border-radius: 30px 30px 0px 0px;
+    background-color: white; 
+}
+
+.menu{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.line{
+    background-color: $color-tertiaire-vert;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 60px;
+    height: 2px;
+    padding: 2px;
+}
+
+.repas{
+    display: flex;
+    flex-direction: column;
+
+    .plats{
+        margin-top: 15px;
+        padding: 3%;
+        border-radius: 20px;
+        box-shadow: $box-shadows-article-var;
+
+        &__details{
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                line-height: 30px;
+            }
+            
+            .prix{
+                font-weight: 900;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.btn_menus{
+    @extend %flex-center;
+    margin: 15px auto;
+    width: 50%;
+}
+
