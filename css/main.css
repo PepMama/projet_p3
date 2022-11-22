@@ -89,9 +89,16 @@ ul {
   border-bottom: 4px solid #d1d1d1;
 }
 .header__img {
+  display: flex;
+  justify-content: space-between;
   width: 180px;
   height: 30px;
   margin: 0 auto;
+}
+.header__img .fa-arrow-left {
+  margin-left: -65px;
+  font-size: 30px;
+  color: black;
 }
 
 /*===================== Fin CSS Header ===================== */

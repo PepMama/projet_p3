@@ -1,11 +1,21 @@
 /*===================== CSS Header ===================== */
 .header{
     @extend %container;
+    
     border-bottom: 4px solid #d1d1d1;
     &__img{
+        display: flex;
+        justify-content: space-between;
         width: 180px;
         height: 30px;
         margin: 0 auto;
+
+        .fa-arrow-left{
+            margin-left: -65px;
+            
+            font-size: 30px;
+            color: black;
+        }
     }   
 }
 
