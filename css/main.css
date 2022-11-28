@@ -27,6 +27,19 @@
 }
 
 */
+/*===================== CSS Components ===================== */
+.btn {
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  color: #FFF;
+  background: linear-gradient(#FF79DA, 15%, #9356DC);
+  box-shadow: 0px 10px 5px #c2c2c2;
+  opacity: 80%;
+}
+
+/*===================== Fin CSS Components ===================== */
 /*===================== CSS principal ===================== */
 /*===================== Fonts ===================== */
 *, *::before, *::after {
@@ -70,17 +83,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-.btn {
-  padding: 18px;
-  font-size: 18px;
-  border: none;
-  border-radius: 30px;
-  color: #FFF;
-  background: linear-gradient(#FF79DA, 15%, #9356DC);
-  box-shadow: 0px 10px 5px #c2c2c2;
-  opacity: 80%;
 }
 
 /*===================== Fin CSS principal ===================== */
@@ -242,7 +244,7 @@ ul {
 }
 .restaurants__cards .fa-heart {
   font-size: 30px;
-  margin-left: 300px;
+  margin-left: 320px;
   position: relative;
   bottom: 50px;
 }
