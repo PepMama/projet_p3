@@ -134,6 +134,11 @@
             margin-left: 320px;
             position: relative;
             bottom: 50px;
+
+            &:hover{
+                background-color: linear-gradient($color-secondary-rose, 15%, $color-primary-violet);
+            }
+
         }               
     }
 }

@@ -2,7 +2,8 @@
 @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./components/component.scss";
-@import "./base/base.scss"; // on import le css qui sera présent sur toutes les pages
+@import "./base/base.scss"; // on importe le css qui sera présent sur toutes les pages
+@import "./utils/animations.scss";
 
 @import "./layouts/header";
 @import "./layouts/footer";
