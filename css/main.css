@@ -89,12 +89,26 @@ ul {
 /*===================== CSS Animations ===================== */
 @keyframes slideDownPlats {
   0% {
-    transform: translateY(50px);
+    transform: translateY(35px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
+.first {
+  animation: slideDownPlats 1000ms 50ms backwards;
+}
+
+.second {
+  animation: slideDownPlats 1000ms 500ms backwards;
+}
+
+.third {
+  animation: slideDownPlats 1000ms 1000ms backwards;
+}
+
 /*===================== CSS Header ===================== */
 .header {
   border-bottom: 4px solid #d1d1d1;
@@ -257,8 +271,10 @@ ul {
   position: relative;
   bottom: 50px;
 }
-.restaurants__cards .fa-heart:hover {
-  background-color: linear-gradient(#FF79DA, 15%, #9356DC);
+.restaurants__cards .fa-heart:hover::before {
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*===================== Fin CSS restaurants ===================== */
