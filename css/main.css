@@ -5,7 +5,7 @@
 /* Variables Box Shadows */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
-.btn_menus, .presentation__box, .fa-circle-check {
+.btn_menus, .presentation__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +86,7 @@ ul {
 }
 
 /*===================== Fin CSS principal ===================== */
-.box-check {
+.check {
   position: absolute;
   background-color: #99E2D0;
   padding: 20px 40px;
@@ -95,15 +95,25 @@ ul {
   top: 0;
   width: 8%;
   height: 100%;
+  transform: scaleX(0px);
+  transition: transform 400ms;
+  transform-origin: right;
 }
-
-.fa-circle-check {
-  color: white;
-  font-size: 35px;
-  transition: all 0.6s;
+.check__animation {
+  z-index: 3;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: white;
+  position: absolute;
+  justify-content: center;
+  transform: rotate(-360deg);
+  transition: 500ms ease-in-out;
+  overflow: hidden;
 }
-.fa-circle-check:hover {
-  transform: rotate(360deg);
+.check__animation i {
+  color: #99E2D0;
+  z-index: 4;
 }
 
 /*===================== CSS Animations ===================== */
@@ -168,6 +178,13 @@ ul {
     border-bottom-color: #9356DC;
   }
 }
+.plats__details:hover > .check {
+  transform: scaleX(1);
+}
+.plats__details:hover > .check > .check__animation {
+  transform: rotate(0deg);
+}
+
 /*===================== CSS Header ===================== */
 .header {
   border-bottom: 4px solid #d1d1d1;

@@ -52,26 +52,34 @@ ul{
 
 /*===================== Fin CSS principal ===================== */
 
-.box-check{
+.check{
     position: absolute;
     background-color: $color-tertiaire-vert;
     padding: 20px 40px;
     border-radius: 0px 20px 20px 0px ;
     right: 0;
     top: 0;
-    // top: 150px;
-    // left: 330px;
     width: 8%;
     height: 100%;
-}
+    transform: scaleX(0px);
+    transition: transform 400ms;
+    transform-origin: right;
 
-.fa-circle-check{
-    @extend %flex-center;
-    color: white;
-    font-size: 35px;
-    transition: all 0.6s;
+    &__animation{
+        z-index: 3;
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+        background-color: white;
+        position: absolute;
+        justify-content: center;
+        transform: rotate(-360deg);
+        transition: 500ms ease-in-out;
+        overflow: hidden;
 
-    &:hover{
-        transform: rotate(360deg);
+        i{
+            color: $color-tertiaire-vert;
+            z-index: 4;
+        }
     }
 }
