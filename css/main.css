@@ -5,7 +5,7 @@
 /* Variables Box Shadows */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
-.btn_menus, .presentation__box {
+.btn_menus, .presentation__box, .fa-circle-check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +86,26 @@ ul {
 }
 
 /*===================== Fin CSS principal ===================== */
+.box-check {
+  position: absolute;
+  background-color: #99E2D0;
+  padding: 20px 40px;
+  border-radius: 0px 20px 20px 0px;
+  right: 0;
+  top: 0;
+  width: 8%;
+  height: 100%;
+}
+
+.fa-circle-check {
+  color: white;
+  font-size: 35px;
+  transition: all 0.6s;
+}
+.fa-circle-check:hover {
+  transform: rotate(360deg);
+}
+
 /*===================== CSS Animations ===================== */
 @keyframes slideDownPlats {
   0% {
@@ -109,6 +129,45 @@ ul {
   animation: slideDownPlats 1000ms 1000ms backwards;
 }
 
+.spinner {
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 16px solid black;
+  width: 120px;
+  height: 120px;
+  border-top-color: #FF79DA;
+  border-bottom-color: #FF79DA;
+  border-right-color: #9356DC;
+  border-left-color: #9356DC;
+  border-radius: 50%;
+  animation: turn 4s linear infinite;
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-right-color: #FF79DA;
+    border-left-color: #FF79DA;
+    border-top-color: #9356DC;
+    border-bottom-color: #9356DC;
+  }
+  50% {
+    transform: rotate(360deg) scale(1.15);
+    border-top-color: #FF79DA;
+    border-bottom-color: #FF79DA;
+    border-right-color: #9356DC;
+    border-left-color: #9356DC;
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+    border-right-color: #FF79DA;
+    border-left-color: #FF79DA;
+    border-top-color: #9356DC;
+    border-bottom-color: #9356DC;
+  }
+}
 /*===================== CSS Header ===================== */
 .header {
   border-bottom: 4px solid #d1d1d1;
@@ -297,9 +356,13 @@ ul {
 .titreMenu .fa-heart {
   font-size: 30px;
 }
+.titreMenu .fa-heart:hover::before {
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .carte {
-  top: -60px;
   border-radius: 30px 30px 0px 0px;
   background-color: white;
 }
@@ -326,7 +389,9 @@ ul {
   flex-direction: column;
 }
 .repas .plats {
+  position: relative;
   margin-top: 15px;
+  height: 75px;
   padding: 3%;
   border-radius: 20px;
   box-shadow: 1px 1px 12px #c2c2c2;

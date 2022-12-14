@@ -22,3 +22,60 @@
 .third{
     animation: slideDownPlats $menu-duree $third-apparition backwards;
 }
+
+.spinner{
+    position: relative;
+    margin: auto;
+    margin-top : 100px;
+    margin-bottom: 100px;
+    border : 16px solid black;
+    width : 120px;
+    height: 120px;
+    border-top-color : #FF79DA;
+    border-bottom-color: #FF79DA;
+    border-right-color: #9356DC;
+    border-left-color: #9356DC;
+    border-radius : 50%;
+    animation: turn 4s linear infinite;
+  }
+  
+  @keyframes turn{
+    0%{
+      transform: rotate(0deg) scale(1);
+      border-right-color : #FF79DA;
+      border-left-color: #FF79DA;
+      border-top-color: #9356DC;
+      border-bottom-color: #9356DC;
+    }
+    50%{
+      transform: rotate(360deg) scale(1.15);
+      border-top-color : #FF79DA;
+      border-bottom-color: #FF79DA;
+      border-right-color: #9356DC;
+      border-left-color: #9356DC;
+    }
+    100%{
+      transform: rotate(720deg) scale(1);
+      border-right-color : #FF79DA;
+      border-left-color: #FF79DA;
+      border-top-color: #9356DC;
+      border-bottom-color: #9356DC;
+    }
+  }
+
+
+
+
+
+
+// @keyframes checkBox {
+//     0%{
+//         transform: translateX(0);
+//         opacity: 0;
+//     }
+//     100%{
+//         transform: translateX(+30px) ;
+//         opacity: 1;
+//         display: block;
+//     }
+// }

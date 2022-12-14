@@ -16,14 +16,20 @@
     }
 
     .fa-heart{
-        font-size: 30px
+        font-size: 30px;
+
+        &:hover::before{
+            background: linear-gradient($color-secondary-rose, $color-primary-violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 
 }
 
 .carte{
     @extend %container;
-    top: -60px;
+
     border-radius: 30px 30px 0px 0px;
     background-color: white; 
 }
@@ -51,7 +57,9 @@
     flex-direction: column;
 
     .plats{
+        position: relative;
         margin-top: 15px;
+        height: 75px;
         padding: 3%;
         border-radius: 20px;
         box-shadow: $box-shadows-article-var;
@@ -78,4 +86,7 @@
     margin: 15px auto;
     width: 50%;
 }
+
+
+
 

@@ -134,10 +134,8 @@
             margin-left: 320px;
             position: relative;
             bottom: 50px;
-
+            
             &:hover::before{
-                // background: -webkit-gradient(linear, left top, left bottom, from($color-secondary-rose), to($color-primary-violet));
-                // background: -o-linear-gradient($color-secondary-rose, $color-primary-violet);
                 background: linear-gradient($color-secondary-rose, $color-primary-violet);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
