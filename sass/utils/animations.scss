@@ -62,8 +62,19 @@
       border-bottom-color: #9356DC;
     }
   }
+
+
+
+
+.card__menu{
+  &:hover > .menu__choice--text{
+    width: 180px;
+  }
+
+  &:hover > .menu__choice--price{
+    transform: translateX(-55px);
+  }
   
-.plats__details{
   &:hover > .check{
     transform: scaleX(1);
     & > .check__animation{

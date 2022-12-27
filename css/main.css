@@ -178,10 +178,16 @@ ul {
     border-bottom-color: #9356DC;
   }
 }
-.plats__details:hover > .check {
+.card__menu:hover > .menu__choice--text {
+  width: 180px;
+}
+.card__menu:hover > .menu__choice--price {
+  transform: translateX(-55px);
+}
+.card__menu:hover > .check {
   transform: scaleX(1);
 }
-.plats__details:hover > .check > .check__animation {
+.card__menu:hover > .check > .check__animation {
   transform: rotate(0deg);
 }
 
@@ -357,18 +363,18 @@ ul {
 /*===================== CSS Menus ===================== */
 .imageMenu {
   position: relative;
-  height: 300px;
+  height: 200px;
 }
 
 .titreMenu {
-  margin-bottom: 20px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .titreMenu h1 {
   font-family: "Shrikhand";
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 100;
 }
 .titreMenu .fa-heart {
   font-size: 30px;
@@ -426,8 +432,118 @@ ul {
   font-size: 18px;
 }
 
+section {
+  justify-items: center;
+  display: grid;
+  height: auto;
+  margin-bottom: -5px;
+  max-width: 100%;
+}
+section .menu__choice {
+  display: grid;
+  height: auto;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  align-items: flex-end;
+  justify-items: center;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(4, 1fr);
+}
+section .menu__choice--text {
+  margin: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 232px;
+  transition: transform 500ms ease-in-out;
+}
+section .menu__choice--text h2 {
+  width: auto;
+}
+section .menu__choice--price {
+  height: 100%;
+  width: 50px;
+  margin: 0;
+  top: 0;
+  display: flex;
+  border-radius: 0px 0px 30px 30px;
+  background-color: white;
+  align-items: flex-end;
+  margin-left: 10px;
+  transition: transform 500ms ease-in-out;
+}
+section .menu__choice .textOnly {
+  padding-right: 2px;
+}
+section .menu__choice .textOnly__title {
+  width: auto;
+  position: relative;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section .menu__choice .textOnly__description {
+  width: auto;
+  position: relative;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section .menu__choice .textOnly__description p {
+  width: auto;
+}
+section .card__menu {
+  display: flex;
+  align-items: center;
+  border-radius: 15px 15px 15px 15px;
+  justify-content: space-between;
+  width: 320px;
+  height: 66px;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+section .card__animation--menu {
+  background-color: white;
+  box-shadow: 4px 4px 5px #abb0b4;
+  transition: box-shadow 250ms, scale 50ms 200ms;
+}
+section .card__animation--menu:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #343638;
+}
+section .check {
+  display: flex;
+  background-color: #99E2D0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: absolute;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  float: right;
+  left: 250px;
+  width: 70px;
+  transform: scaleX(0);
+  transition: transform 400ms;
+}
+section .meal {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  margin-right: 250px;
+  border-bottom: 3px solid #99E2D0;
+}
+
 .btn_menus {
-  margin: 15px auto;
+  margin: 40px auto;
   width: 50%;
 }
 
