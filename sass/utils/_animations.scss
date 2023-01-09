@@ -22,20 +22,53 @@
 .third{
     animation: slideDownPlats $menu-duree $third-apparition backwards;
 }
+
 /* Animation du spinner */
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: show-spinner 0.2s forwards;
+  animation-name: disapear;
+  animation-duration: 3000ms;
+}
+
+@keyframes show-spinner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ 
+@keyframes disapear {
+  99%{
+    height: 100vh;
+    visibility: visible;
+  }
+  100%{
+    height: 0px;
+    visibility: hidden;
+  }
+}
+
 .spinner {
   width: 70px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .spinner > div {
-  width: 60px;
-  height: 20px;
-  background-color: #333;
+  width: 18px;
+  height: 18px;
+  background-color: $color-tertiaire-vert-dark;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -67,20 +100,20 @@
   }
 }
 
-.card__menu{
-  &:hover > .menu__choice--text{
-    width: 180px;
-  }
 
-  &:hover > .menu__choice--price{
-    transform: translateX(-55px);
+.spinner-container.hidden {
+  animation: hide-spinner 0.5s forwards;
+}
+
+@keyframes hide-spinner {
+  0% {
+    opacity: 1;
   }
-  
-  &:hover > .check{
-    transform: scaleX(1);
-    & > .check__animation{
-      transform: rotate(0deg);
-    }
+  100% {
+    opacity: 0;
   }
 }
-  
+
+/* .content {
+  display: none;
+} */

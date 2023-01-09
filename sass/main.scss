@@ -3,11 +3,13 @@
 @import "./utils/mixins";
 @import "./components/component.scss";
 @import "./base/base.scss"; // on importe le css qui sera présent sur toutes les pages
-@import "./utils/animations.scss";
-
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./pages/homepage";
+@import "./utils/animations.scss";
 @import "./pages/menupages";
-
+@import "./media/home-desktop.scss";
+@import "./media/home-tablette";
+@import "./media/menu-desktop.scss";
+@import "./media/menu-tablette.scss";
 

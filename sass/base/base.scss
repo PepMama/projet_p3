@@ -52,7 +52,7 @@ ul{
 
 /*===================== Fin CSS principal ===================== */
 
-.check{
+/*.check{
     position: absolute;
     background-color: $color-tertiaire-vert;
     padding: 20px 40px;
@@ -76,10 +76,12 @@ ul{
         transform: rotate(-360deg);
         transition: 500ms ease-in-out;
         overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 
         i{
             color: $color-tertiaire-vert;
             z-index: 4;
         }
     }
-}
+}*/

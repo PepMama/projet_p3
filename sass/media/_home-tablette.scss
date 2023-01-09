@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px){
+    .restaurants__all{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .fonctionnement__all{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    h1{
+        padding: 30px 70px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
