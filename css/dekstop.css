@@ -234,8 +234,18 @@ ul {
 /*===================== CSS Fonctionnement ===================== */
 .fonctionnement {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+}
+.fonctionnement h1{
+  margin: 15px 100px;
+}
+.fonctionnementLists{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.fonctionnementLists > div{
+  width: 18%;
 }
 .fonctionnement__box {
   display: flex;
@@ -272,6 +282,18 @@ ul {
   display: flex;
   flex-direction: column;
 }
+.restaurants h1{
+  margin: 15px 100px;
+}
+.restaurantLists{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.restaurantLists > article {
+  width: 40%;
+}
+
 .restaurants__cards {
   margin-top: 12px;
   margin-bottom: 12px;
@@ -310,9 +332,9 @@ ul {
 }
 .restaurants__cards .fa-heart {
   font-size: 30px;
-  margin-left: 320px;
   position: relative;
   bottom: 50px;
+  left: 600px;
 }
 .restaurants__cards .fa-heart:hover::before {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -511,19 +533,39 @@ section .meal {
 /*# sourceMappingURL=main.css.map */
 
 /* Animation du spinner */
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: show-spinner 0.5s forwards;
+}
+
+@keyframes show-spinner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .spinner {
   width: 70px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .spinner > div {
-  width: 60px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-color: #333;
+
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -541,21 +583,34 @@ section .meal {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
-     -webkit-transform: scale(0) 
-    }
-  40% {
-     -webkit-transform: scale(1.0) 
-    }
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
 }
 
 @keyframes sk-bouncedelay {
   0%, 80%, 100% { 
     -webkit-transform: scale(0);
     transform: scale(0);
-  } 
-  40% { 
+  } 40% { 
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
   }
 }
+
+
+.spinner-container.hidden {
+  animation: hide-spinner 0.5s forwards;
+}
+
+@keyframes hide-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* .content {
+  display: none;
+} */
