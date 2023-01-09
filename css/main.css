@@ -689,7 +689,7 @@ header {
     justify-content: space-around;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants__all {
     display: flex;
     flex-direction: row;
