@@ -12,10 +12,19 @@
 </head>
 
 <body>
-  <header>
-    <a href="../index.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
-    <img id="logo" src="../images/logo/ohmyfood.png" alt="logo ohmyfood">
-</header>
+    <div class="spinner-container">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__img">
+          <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="../images/logo/ohmyfood.png" alt="Logo principal du site" />
+        </div>
+      </header>
 <section class="menu--image">
     <img src="../images/restaurants/a-la-francaise.jpg" alt="a la francaise">
 </section>
@@ -24,122 +33,124 @@
         <span class="menu__title--text">À la française</span>
         <i class="fa-sharp fa-solid fa-heart fa-2x"></i>
     </div>
-    <div class="menu__entree">
-        <span class="menu__entree__title">ENTRÉES<div class="menu__entree__title--bar"></div></span>
-        <div class="first card__menu">
-            <div class="card__menu__text">
-                <span class="card__menu__text--title">Tartare de poulpe acidulé</span>
-                <span class="card__menu__text--description">Aux zestes d'orange</span>
+    <div class="all__menus">
+        <div class="menu__entree">
+            <span class="menu__entree__title">ENTRÉES<div class="menu__entree__title--bar"></div></span>
+            <div class="first card__menu">
+                <div class="card__menu__text">
+                    <span class="card__menu__text--title">Tartare de poulpe acidulé</span>
+                    <span class="card__menu__text--description">Aux zestes d'orange</span>
+                </div>
+                <div class="card__menu__price">
+                    <span class="card__menu__price--price">25€</span>
+                </div>
+                <div class="card__menu--animation">
+                    <i class="fa-solid fa-circle-check fa-2x"></i>
+                </div>
             </div>
-            <div class="card__menu__price">
-                <span class="card__menu__price--price">25€</span>
+            <div class="second card__menu">
+                <div class="card__menu__text">
+                    <span class="card__menu__text--title">Velouté de légumes d'antan</span>
+                    <span class="card__menu__text--description">Carotte, panais, topinambour</span>
+                </div>
+                <div class="card__menu__price">
+                    <span class="card__menu__price--price">35€</span>
+                </div>
+                <div class="card__menu--animation">
+                    <i class="fa-solid fa-circle-check fa-2x"></i>
+                </div>
             </div>
-            <div class="card__menu--animation">
-                <i class="fa-solid fa-circle-check fa-2x"></i>
-            </div>
-        </div>
-        <div class="second card__menu">
-            <div class="card__menu__text">
-                <span class="card__menu__text--title">Velouté de légumes d'antan</span>
-                <span class="card__menu__text--description">Carotte, panais, topinambour</span>
-            </div>
-            <div class="card__menu__price">
-                <span class="card__menu__price--price">35€</span>
-            </div>
-            <div class="card__menu--animation">
-                <i class="fa-solid fa-circle-check fa-2x"></i>
-            </div>
-        </div>
-        <div class="third card__menu">
-            <div class="card__menu__text">
-                <span class="card__menu__text--title">Soupe à l'oignon</span>
-                <span class="card__menu__text--description">Revisitée</span>
-            </div>
-            <div class="card__menu__price">
-                <span class="card__menu__price--price">20€</span>
-            </div>
-            <div class="card__menu--animation">
-                <i class="fa-solid fa-circle-check fa-2x"></i>
-            </div>
-        </div>
-    </div>
-    <div class="menu__plat">
-        <span class="menu__plat__title">PLATS<div class="menu__plat__title--bar"></div></span>
-        <div class="first card__menu">
-            <div class="card__menu__text">
-                <span class="card__menu__text--title">Coquilles Saint-Jacques</span>
-                <span class="card__menu__text--description">Accompagnées d'une purée de panais</span>
-            </div>
-            <div class="card__menu__price">
-                <span class="card__menu__price--price">40€</span>
-            </div>
-            <div class="card__menu--animation">
-                <i class="fa-solid fa-circle-check fa-2x"></i>
+            <div class="third card__menu">
+                <div class="card__menu__text">
+                    <span class="card__menu__text--title">Soupe à l'oignon</span>
+                    <span class="card__menu__text--description">Revisitée</span>
+                </div>
+                <div class="card__menu__price">
+                    <span class="card__menu__price--price">20€</span>
+                </div>
+                <div class="card__menu--animation">
+                    <i class="fa-solid fa-circle-check fa-2x"></i>
+                </div>
             </div>
         </div>
-        <div class="second card__menu">
-            <div class="card__menu__text">
-                <span class="card__menu__text--title">Magret de canard</span>
-                <span class="card__menu__text--description">Et parmentier de pommes de terre</span>
+        <div class="menu__plat">
+            <span class="menu__plat__title">PLATS<div class="menu__plat__title--bar"></div></span>
+            <div class="first card__menu">
+                <div class="card__menu__text">
+                    <span class="card__menu__text--title">Coquilles Saint-Jacques</span>
+                    <span class="card__menu__text--description">Accompagnées d'une purée de panais</span>
+                </div>
+                <div class="card__menu__price">
+                    <span class="card__menu__price--price">40€</span>
+                </div>
+                <div class="card__menu--animation">
+                    <i class="fa-solid fa-circle-check fa-2x"></i>
+                </div>
             </div>
-            <div class="card__menu__price">
-                <span class="card__menu__price--price">35€</span>
+            <div class="second card__menu">
+                <div class="card__menu__text">
+                    <span class="card__menu__text--title">Magret de canard</span>
+                    <span class="card__menu__text--description">Et parmentier de pommes de terre</span>
+                </div>
+                <div class="card__menu__price">
+                    <span class="card__menu__price--price">35€</span>
+                </div>
+                <div class="card__menu--animation">
+                    <i class="fa-solid fa-circle-check fa-2x"></i>
+                </div>
             </div>
-            <div class="card__menu--animation">
-                <i class="fa-solid fa-circle-check fa-2x"></i>
-            </div>
-        </div>
-        <div class="third card__menu">
-            <div class="card__menu__text">
-                <span class="card__menu__text--title">Pigeonneau d’Ille-et-Vilaine</span>
-                <span class="card__menu__text--description">Sur son lit de gnocchis aux légumes</span>
-            </div>
-            <div class="card__menu__price">
-                <span class="card__menu__price--price">44€</span>
-            </div>
-            <div class="card__menu--animation">
-                <i class="fa-solid fa-circle-check fa-2x"></i>
-            </div>
-        </div>
-    </div>
-    <div class="menu__dessert">
-        <span class="menu__dessert__title">DESSERTS<div class="menu__dessert__title--bar">
-          </div>
-        </span>
-        <div class="first card__menu">
-            <div class="card__menu__text">
-                <span class="card__menu__text--title">Pétales de violettes glacés</span>
-                <span class="card__menu__text--description">Et purée de noisettes</span>
-            </div>
-            <div class="card__menu__price">
-                <span class="card__menu__price--price">18€</span>
-            </div>
-            <div class="card__menu--animation">
-                <i class="fa-solid fa-circle-check fa-2x"></i>
+            <div class="third card__menu">
+                <div class="card__menu__text">
+                    <span class="card__menu__text--title">Pigeonneau d’Ille-et-Vilaine</span>
+                    <span class="card__menu__text--description">Sur son lit de gnocchis aux légumes</span>
+                </div>
+                <div class="card__menu__price">
+                    <span class="card__menu__price--price">44€</span>
+                </div>
+                <div class="card__menu--animation">
+                    <i class="fa-solid fa-circle-check fa-2x"></i>
+                </div>
             </div>
         </div>
-        <div class="second card__menu">
-            <div class="card__menu__text">
-                <span class="card__menu__text--title">Fondant au chocolat</span>
-                <span class="card__menu__text--description">Revisité</span>
+        <div class="menu__dessert">
+            <span class="menu__dessert__title">DESSERTS<div class="menu__dessert__title--bar">
+              </div>
+            </span>
+            <div class="first card__menu">
+                <div class="card__menu__text">
+                    <span class="card__menu__text--title">Pétales de violettes glacés</span>
+                    <span class="card__menu__text--description">Et purée de noisettes</span>
+                </div>
+                <div class="card__menu__price">
+                    <span class="card__menu__price--price">18€</span>
+                </div>
+                <div class="card__menu--animation">
+                    <i class="fa-solid fa-circle-check fa-2x"></i>
+                </div>
             </div>
-            <div class="card__menu__price">
-                <span class="card__menu__price--price">22€</span>
+            <div class="second card__menu">
+                <div class="card__menu__text">
+                    <span class="card__menu__text--title">Fondant au chocolat</span>
+                    <span class="card__menu__text--description">Revisité</span>
+                </div>
+                <div class="card__menu__price">
+                    <span class="card__menu__price--price">22€</span>
+                </div>
+                <div class="card__menu--animation">
+                    <i class="fa-solid fa-circle-check fa-2x"></i>
+                </div>
             </div>
-            <div class="card__menu--animation">
-                <i class="fa-solid fa-circle-check fa-2x"></i>
-            </div>
-        </div>
-        <div class="third card__menu">
-            <div class="card__menu__text">
-                <span class="card__menu__text--title">Millefeuille croustillant</span>
-                <span class="card__menu__text--description">Myrtilles et pâte d’amande</span>
-            </div>
-            <div class="card__menu__price">
-                <span class="card__menu__price--price">23€</span>
-            </div>
-            <div class="card__menu--animation">
-                <i class="fa-solid fa-circle-check fa-2x"></i>
+            <div class="third card__menu">
+                <div class="card__menu__text">
+                    <span class="card__menu__text--title">Millefeuille croustillant</span>
+                    <span class="card__menu__text--description">Myrtilles et pâte d’amande</span>
+                </div>
+                <div class="card__menu__price">
+                    <span class="card__menu__price--price">23€</span>
+                </div>
+                <div class="card__menu--animation">
+                    <i class="fa-solid fa-circle-check fa-2x"></i>
+                </div>
             </div>
         </div>
     </div>
