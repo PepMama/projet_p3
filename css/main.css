@@ -437,9 +437,6 @@ ul {
     opacity: 0;
   }
 }
-/* .content {
-  display: none;
-} */
 /*===================== CSS Menus ===================== */
 * {
   padding: 0;
@@ -637,6 +634,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .header {
+    width: 100%;
+  }
   .fonctionnement__all {
     display: flex;
     flex-direction: row;
@@ -679,9 +679,6 @@ header {
     display: flex;
     justify-content: space-around;
   }
-  .all__menus {
-    display: flex;
-  }
   .menu__entree, .menu__plat, .menu__dessert {
     display: flex;
     flex-direction: column;
@@ -690,6 +687,12 @@ header {
   .card__menu {
     width: 370px;
     margin-top: 20px;
+  }
+  .all__menus {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -708,7 +711,7 @@ header {
     margin-left: 150px;
   }
   .card__menu {
-    width: 375px;
+    width: 300px;
     margin-top: 20px;
   }
 }
